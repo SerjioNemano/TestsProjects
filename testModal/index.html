@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src='js/main.js'></script>
+</head>
+<body>
+	<header>
+
+	</header>
+	<main>
+		<button class="btn">Большая красная кнопка</button>
+		<a href="#" class="background hide"></a>
+		<article class="">
+			<div class="high hide" >
+
+				<div class="navBtn">
+					<a href="#" class="enterToggle"><span>Вход</span></a>
+					<a href="#" class="registrationToggle passive"><span>Регистрация</span></a>
+				</div>
+				<span class="error hide"></span>
+				<div class="enter">
+					<form  class="enterForm" action="">
+
+						<div class="btngroup">
+							<span class="fa fa-at " aria-hidden="true"></span>
+							<input class="email" name='email' type="email"  placeholder="E-mail">
+						</div> 
+
+
+						<div class="btngroup">
+							<span class="fa fa-key " ></span>
+							<input class="password" name='password' type="password" placeholder="Пароль">
+							<a class = 'hideShow'href="#"> Скрыть</a>
+						</div> 	
+
+						<div class="remember">
+							<input type="checkbox" class="novalid" id="remember"/>
+							<label for="remember"  name='remember'>Запомнить меня</label>
+						</div>
+
+						<input name="submit" class="submit novalid" type="submit" value="Войти" >
+					</form>
+
+				</div>
+				<div class="registration hide">
+					<form class="registrationForm" action="">
+						<div class="btngroup">
+							<span class="fa fa-at " aria-hidden="true"></span>
+							<input class="email" name='email' type="email"  placeholder="E-mail">
+						</div>
+
+
+						<div class="btngroup">
+							<span class="fa fa-key" ></span>
+							<input class="passwordOne" name='password' type="password" placeholder="Пароль">
+							<a class = 'hideShow'href="#"> Скрыть</a>
+						</div> 
+
+						<div class="btngroup twopass">
+							<span class="fa fa-key" ></span>
+							<input class="passwordTwo " name='password' type="password" placeholder="Повторите пароль">
+							<a class = 'hideShow'href="#"> Скрыть</a>
+						</div>
+
+						<div class="btngroup mobile">
+							<span class="fa fa-mobile fa-2x" ></span>
+							<input class="phone " name='phone' type="text" placeholder="Номер телефона">
+						</div>	
+
+						<div class="regulations">
+							<input type="checkbox" name="regulations" class="acceptRegulations" id="regulations"/>
+							<label for="regulations">Согласен с правилами ресурса</label>
+						</div>
+
+						<input name="submit" class="submit novalid" type="submit" value="Зарегистрироваться" >
+					</form>
+				</div>
+				<a href="#" class="remind">Забыли пароль?</a>
+			</div>
+		</article>
+	</main>
+</body>
+</html>

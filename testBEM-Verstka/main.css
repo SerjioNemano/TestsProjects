@@ -1,0 +1,686 @@
+@font-face {
+	font-family: "ProximaNova-Regular";
+	src: url("fonts/ProximaNova-Regular.woff");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNova-Light";
+	src: url("fonts/ProximaNova-Light.woff");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNova-Bold";
+	src: url("fonts/ProximaNova-Bold.woff");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "exo";
+	src: url("fonts/exo-20-bold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+/*Подключение иконок*/
+.icon{
+	background-image: url(img/spriteACT.png);
+}
+/*стиль кнопки*/
+.btn{
+	color: #fff;
+	border: none;
+	background-color: #aacc3a;
+	border-radius: 10px;
+	font-size: 20px;
+	width: 240px;
+	height: 57px;
+	cursor: pointer;
+}
+.siteContent{
+	font-family: "ProximaNova-Regular";
+	margin: 0;
+	background-color: #f8f8f8;
+	margin-right: 130px;
+}
+.container{
+	margin: auto;
+	width: 1170px;
+}
+/*стили хедера*/
+.header{
+	display: flex;
+	justify-content: center;
+	padding: 31px 0 23px 0;
+	width:100%;
+	background-color: #fff;
+}
+.headerBlock{
+	height: 94px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/*Логотип*/
+.logo_position{
+	margin-left: -21px;
+}
+/*Стили меню*/
+.nav{
+	flex-grow: 1;
+}
+.menu{
+	margin: 0;
+	padding: 0 62px 18px 56px;
+	display: flex;
+	list-style: none;
+	height: inherit;
+	justify-content: space-between;
+}
+.menu__List{
+	display: flex;
+	height: 100%;
+}
+.menu__item{
+	text-decoration: none;
+	color: #113b5f;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid lightgray;
+}
+/*Стили контактов*/
+.contacts{
+	height: 100%;
+	width: 200px;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+}
+.contacts__item{
+	display: flex;
+	align-items: center;
+	font-family: "ProximaNova-Regular";
+	text-decoration: none;
+	color: #000000;
+	font-size: 13px;
+}
+.contacts__text_bold{
+	font-family: "ProximaNova-Bold";
+	font-size: 22px;
+}
+.contacts__icon{
+	margin-right: 5px;
+	width: 21px;
+	height: 21px;
+}
+.contacts__icon_tel{
+	background-position: 217px 150px;
+}
+.contacts__icon_address{
+	background-position: 263px 150px;
+	height: 27px;
+	width: 23px;
+	margin-right: 11px;
+}
+.contacts__icon_operationMode{
+	width: 21px;
+	height: 23px;
+	background-position: 283px 147px;
+}
+/*Стили поиска*/
+.search__title{
+	text-decoration: none;
+	font-family: "ProximaNova-Regular";
+	font-size: 16px;
+	vertical-align: sub;
+}
+.search__icon{
+	margin-right: 5px;
+	width: 27px;
+	height: 27px;
+	float: left;
+	background-position: 243px 147px;
+}
+.search_margin{
+	margin: 0px 10px 20px 50px;
+}
+/*стили сайдбара*/
+.sidebar{
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 130px;
+	background-color: #113b5f;
+	box-shadow: 0 0 17px 1px #373737;
+	z-index: 2;
+}
+.menu_vertical{
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 22px 0 0 0;
+}
+.menu__List_vertical{
+	height: auto;
+}
+.menu__item_vertical{
+	display: flex;
+	flex-direction: column;
+	color: #ffffff;
+	border: none;
+	font-size: 14px;
+	flex-basis: 100%; 
+	height: auto;
+	padding: 28px 0px;
+}
+.menu__item_vertical:hover{
+	background-color: #3abfef;
+}
+.menu__icon{
+	background-image: url('img/spriteACT.png');
+	width: 36px;
+	height: 45px;
+	background-position: 0px 111px;
+}
+.menu__icon__basket{
+	width: 47px;
+	height: 47px;
+	background-position: 113px 110px;
+}
+.menu__icon__basket__marker{
+	background-color: #3abfef;
+	border-radius: 50%;
+	width: 19px;
+	height: 19px;
+	position: fixed;
+	top: 158px;
+	right: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu__icon__compare{
+	width: 65px;
+	height: 41px;
+	background-position: 69px 110px;
+}
+.menu__icon__service{
+	width: 52px;
+	height: 52px;
+	background-position: 211px 110px;
+}
+.menu__icon__catalog{
+	width: 38px;
+	height: 48px;
+	background-position: 249px 110px;
+}
+.menu__icon__send{
+	width: 44px;
+	height: 48px;
+	background-position: 158px 110px;
+}
+.menu__List_vertical_position{
+/*	position: fixed;
+	bottom: 22px;
+	align-self: center;
+	width: 130px;*/
+}
+/*заголовок блока*/
+.title{
+	margin-top: -8px;
+	text-align: center;
+	color: #113b5f;
+	font-family: "ProximaNova-Bold";
+	font-size: 26px;
+}
+/*блок галереи*/
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.galleryBlock{
+	background-image: url(img/1_copy_6.png);
+	height: 287px;
+	width: 270px;
+	margin-bottom: 30px;
+}
+.galleryBlock__content{
+	width: 100%;
+	height: 100%;
+	background-image: url(img/endoscope.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.galleryBlock__content_hard_endoscope{
+	background-position: left 98px;
+	background-image: url(img/hard_endoscope.png);
+}
+.galleryBlock__content_disinfection{
+	background-position-y: 61px;
+	background-image: url(img/disinfection.png);
+}
+.galleryBlock__content_surgical{
+	background-position: left 69px;
+	background-image: url(img/surgical.png);
+}
+.galleryBlock__content_tools{
+	background-position-y: 65px;
+	background-image: url(img/tools.png);
+}
+.galleryBlock__content_rectangle{
+	background-position:left 68px;
+	background-image: url(img/rectangle.png);
+}
+.galleryBlock__content_warehouse{
+	background-image: none;
+}
+.galleryBlock__content_other{
+	background-image: none;
+}
+.galleryBlock__showcontent{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.galleryBlock__showcontent:hover{
+	background: rgb(7%, 23%, 37%, 0.9);
+}
+.galleryBlock__tile{
+	padding: 23px 18px 21px 18px;
+	font-family: "ProximaNova-Bold";
+	color: #113b5f;
+	font-size: 18px;
+}
+.galleryBlock__tile_white{
+	color: #fff;
+	padding: 0px 18px 21px 18px;
+}
+.galleryBlock__hidecontent{
+	font-size: 12px;
+	color: #fff;
+	text-align: justify;
+	padding: 0px 18px 0px 18px;
+}
+.galleryBlock__showcontent_justify{
+	justify-content: space-evenly;
+}
+/*стили слайдера*/
+.slider{
+	width: 100%;
+	height: 563px;
+	background:#113b5f;
+	color: #fff;
+	margin-top: 33px;
+}
+.slidesContainer{
+	height: 100%;
+}
+.slidesContainer_background{
+	height: 100%;
+	background-image: url(img/7-layers.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.slide__content{
+	width: 50%;
+	padding-top: 119px;
+}
+.slide{
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1170px;
+	display: flex;
+}
+.slide__title{
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.slide__name{
+	font-family: "ProximaNova-Bold";
+	font-size: 90px;
+	color: #3abfef;
+	margin-top: 5px;
+	margin-bottom: 4px;
+}
+.slide__item{
+	font-size: 16px;
+	margin-bottom: 56px;
+}
+.sliderControll{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	width: 127px;
+}
+.sliderControll__btn{
+	display: block;
+	width: 36px;
+	height: 3px;
+	background-color: #ffffff;
+}
+.owl-stage-outer,
+.owl-stage,
+.owl-item,
+.owl-item .cloned,
+.owl-item .cloned .active
+{
+	height: 100%;
+}
+.owl-dots{
+	position: relative;
+	top: -48px;
+	left: 0px;
+}
+/*кнопочки слайдера я кастомизировал прямо в теле плагина*/
+/*АКЦИИ*/
+.btn_small{
+	width: 170px;
+	height: 38px;
+	font-size: 18px;
+}
+.btn_big{
+	width: 343px;
+	height: 58px;
+	font-size: 18px;
+}
+.btnGroup{
+	margin-top: 100px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+.btn_big_position{
+    margin: 0 10px;
+}
+.btn_red{
+	background-color:#b44242;
+}
+.list__title{
+	margin-bottom: 13px;
+	height: 40px;
+}
+.list__prewiew{
+	margin-bottom: 10px;
+}
+.list__description{
+	line-height: 1;
+}
+.title_position{   
+	margin-top: 52px;
+	text-transform: uppercase;
+	font-size: 40px;
+	margin-bottom: 62px;
+}
+.listing{
+	display: flex;
+	justify-content: space-between;
+}
+.list{
+	width: 370px;
+	text-align: justify;
+}  
+.slick-slide>div {padding: 0 15px;}
+.slick-slider{
+	margin: 0 -15px;
+}
+/*стрелочки*/
+.chevron{
+	z-index: 1;
+	position: absolute;
+	background: #f8f8f8;
+	cursor: pointer;
+	width: 63px;
+	height: 416px;
+	border: none;
+}
+.chevron_bgw{
+	background: #fff;
+	height: 225px;
+}
+.chevron:focus {
+	outline: none !important;
+}
+.chevron_left{
+	padding: 0 30px 0 0;
+	margin-left: -48px;
+}
+.chevron_right{
+	padding: 0 0 0 30px;
+	margin-left: 1184px;
+	top: 0;
+}
+.chevron__container{
+	left: -22px;
+	position: relative;
+}
+.chevron__item{
+	position: absolute;
+	display: inline-block;
+	background-color: #113b5f;
+	width: 45px;
+	height:4px;
+}
+.chevron__item_top{
+	transform: rotate(-45deg);
+	top: -15px;
+}
+.chevron__item_bottom{
+	transform: rotate(45deg);
+	top: 15px;
+}
+.chevron__item_top_right{
+	transform: rotate(45deg);
+}
+.chevron__item_bottom_right{
+	transform: rotate(-45deg);
+}
+/*Видеоблок*/
+.sectionBlock_BGwhite{
+	background-color: #fff;
+	padding-top: 71px;
+	padding-bottom: 98px;
+}
+.title__item_size{
+	font-size: 41px;
+}
+.listing_positions{
+	margin-top:: 44px;
+}
+.slide__curtain{
+	position: absolute;
+	width: 371px;
+	background-color: rgb(7%, 23%, 37%, 0.9);
+	height: 33px;
+	bottom: 5px;
+}
+.slide__curtain_hover{
+	height: 225px;
+	top: 0px;
+}
+.bermudaTriangle{
+	opacity: 1;
+	position: relative;
+	left: 165px;
+	/*bottom: 99px;*/
+	top: 84px;
+}
+.hide{
+	display: none;
+	opacity: 0;
+}
+.show{
+	display: block;
+}
+.slide__title_bottom{
+	position: absolute;
+	bottom: 11px;
+	color: white;
+	z-index: 0;
+	text-align: center;
+	display: inline-block;
+	/* height: 100%; */
+	width: 371px;
+	font-size: 16px;
+}
+/*Обратная связь*/
+.btn_big_position{
+
+}
+/*Футер*/
+.footer{
+	background-color:#051524;
+	padding-top: 19px;
+}
+.footerMenu{
+	padding: 0;
+}
+.footerMenu_borderBottom{
+	border-bottom: 1px solid #164562;
+	padding-bottom: 31px;
+}
+.footerMenu__title{
+	color: #3abfef;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.footerMenu__line{
+	background-color: #fff;
+	width: 54px;
+	height: 3px;
+	margin-top: 7px;
+}
+.footerMenu__element{
+	color: #fff;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	margin-bottom: 7px;
+}
+.footerMenu__item{
+	color: #fff;
+	text-decoration: none;
+	margin-left: 5px;
+	font-size: 14px;
+}
+.footerMenu__icon{
+	width: 5px;
+	height: 9px;
+	background-position: 211px 60px;
+}
+.footerLine{
+	position: relative;
+	bottom: 210px;
+	border: none;
+	height: 1px;
+	background-color: #fff;
+	width: 100%;
+}
+.footerFooter{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 17px;
+}
+.footerFooter__logo{
+	display: flex;
+}
+.miniLogo{
+	margin-top: 5px;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+}
+.card1{
+	width: 37px;
+	height: 25px;
+	background-position: -3px 59px;
+}
+.card2{
+	width: 37px;
+	height: 25px;
+	margin-top: 3px;
+	background-position: -4px 28px;
+}
+.social_networks{
+	display: flex;
+	justify-content: center;
+}
+.social__title{
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #3abfef;
+	margin-bottom: 18px;
+}
+.icon_social{
+	width: 32px;
+	height: 30px;
+}
+.icon_vk{
+	background-position: -212px -6px;
+}
+.icon_fb{
+	background-position: -135px -6px;
+}
+.icon_twt{
+	background-position: -96px -6px;
+}
+.icon_inst{
+	background-position: -174px -6px;
+}
+.icon_footerContacts{
+	width: 22px;
+	height: 29px;
+	background-position: -45px 2px;
+	margin-right: 5px;
+}
+.footerFooter__phone{
+	display: flex;
+	margin-top: -4px;
+	margin-bottom: 16px;
+}
+.icon_footerPhone{
+	background-position: -45px -109px;
+}
+.icon_footerMail{
+	background-position: -45px -85px;
+}
+.footerFooter__mail{
+	display: flex;
+}
+.footerPhone{
+	font-size: 24px;
+	font-family: "exo";
+	text-decoration: none;
+	color: #fff;
+}
+.footerMail{
+	font-size: 22px;
+	font-family: "exo";
+	text-decoration: none;
+	color: #fff;
+}
+.copyright{
+	font-family: "Exo 2.0";
+	color: #ffffff;
+	font-size: 12px;
+	padding-bottom: 20px;
+}
+/*форма обратной связи*/
+	.fancybox-content {
+	    border-radius: 10px;
+	}
+	.form{
+	display: flex;
+    flex-direction: column;
+	}
+	.form__Area	{
+    height: 57px;
+    margin: 5px 0;
+    border: 1px solid #808080;
+    border-radius: 10px;
+        padding-left: 10px;
+	}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>VITA</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<header>
+
+	</header>
+	<main>
+		<div class="modal">
+			<div class="modalContainer">
+				<ul class="nav">
+					<li class="btnEnter" ><a href="#">Вход</a></li>
+					<li class="btnRegistration"><a href="#">Регистрация</a></li>
+				</ul>
+				<form class="enter" action="">
+					<div class="btnGroup mail">
+						<input type="text" class="" placeholder="E-mail">
+						<span class="fa fa-at"></span>
+					</div>
+					<div class="btnGroup password">
+						<input type="password" class="" placeholder="Пароль">
+						<span class="fa fa-key "></span>
+						<a class = 'hideShow'href="#"> Скрыть</a>
+					</div>
+
+					<label>
+						<input type="checkbox" checked="true">
+						Запомнить меня 
+					</label>
+
+					<input type="submit" name="" value="Вход">
+				</form>
+				<form class="registration" action="">
+					<div class="btnGroup mail">
+						<input type="text" class="" placeholder="E-mail">
+						<span class="fa fa-at"></span>
+					</div>
+					<div class="btnGroup password passwordOne">
+						<input type="password" class="" placeholder="Пароль">
+						<span class="fa fa-key "></span>
+						<a class = 'hideShow'href="#"> Скрыть</a>
+					</div>
+					<div class="btnGroup password passwordTwo">
+						<input type="password"class="" placeholder="Повторите пароль">
+						<span class="fa fa-key "></span>
+						<a class = 'hideShow'href="#"> Скрыть</a>
+					</div>
+					<div class="btnGroup phone">
+						<input type="text" placeholder="Телефон">
+						<span class="fa fa-mobile fa-2x" ></span>
+					</div>
+
+					<label> 
+						<input type="checkbox" checked="true">
+						Согласен с правилами
+					</label>	
+					<input type="submit" name="" value="Зарегистрироваться">
+				</form>
+				<a href="#" class="remind">Забыли свой пароль?</a>
+			</div>
+		</div>
+	</main>
+	<style type="text/css">
+	body{
+		font-size: 11px;
+		font-family: monospace;
+		margin: 0;
+	}
+	header{
+	width: 100%;
+	height: 40px;
+	background-color: #e4eaed;
+
+}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	.modal{
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		background-color: #0c0e1ab0;
+		top: 0;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding-top: 27px;
+
+	}
+	.modalContainer{
+		max-width: 420px;
+		width: 100%;
+		background-color:#fff;
+		border: solid 1px black;
+		z-index: 2;
+		height: fit-content;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.remind{
+		font-size: 10px;
+		color: #fff;
+		position: fixed;
+		display: flex;
+		left: calc(50% - 52px);
+		margin-top: 11px;
+		text-decoration: underline;
+	}
+	form{
+		display: flex;
+		flex-direction: column;
+		padding: 23px;
+	}
+	.nav{
+		display: flex;
+		list-style: none;
+		justify-content: space-around;
+		padding: 0;
+		height: 47px;
+		margin: 0;
+		align-items: center;
+
+	}
+	.nav li{
+		width: 100%;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav li:hover{
+		background-color: #d2d8d8;
+	}
+	.nav li a{
+		display: block;
+	}
+	label{
+		display: flex;
+		align-items: center;
+		margin-bottom: 14px;
+	}
+	form input:not([type=checkbox]) {
+		height: 35px;
+		border:solid 1px lightgray;
+		margin-bottom: 22px;
+	}
+	form input[type=submit]{
+		background-color: #2f889a;
+		margin-bottom: 0;
+		color: #fff;
+	}
+/*	.registration{
+display: none;
+}*/
+.enter{
+	display: none;
+}
+.btnGroup input{
+	padding-left: 30px;
+	width: calc(100% - 30px);
+}
+.btnGroup span{
+	left: 315px;
+	position: fixed;
+}
+.mail span{
+	top: 112px;
+}
+
+.password span	{
+	top: 174px;
+}
+.passwordTwo span{
+	top: 233px;
+}
+.phone span{
+	top: 289px;
+}
+.hideShow {
+	position: fixed;
+	left: 606px;
+	top: 161px;
+}
+.hideShow:before{
+	content: '|';
+	font-size: 25px;
+	color: #dddcdc;
+}
+.passwordTwo .hideShow {
+	top:  222px;;
+}
+
+
+</style>	
+</body>
+</html>
